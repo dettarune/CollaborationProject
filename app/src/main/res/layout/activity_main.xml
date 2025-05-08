@@ -1,38 +1,12 @@
- feat/login-page
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
 <LinearLayout
- master
     android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
     android:gravity="center"
     android:layout_marginHorizontal="24dp"
     android:orientation="vertical"
     android:padding="50dp">
-
-feat/login-page
-   <EditText
-       android:id="@+id/user"
-       android:layout_width="160dp"
-       android:layout_height="wrap_content"
-       android:hint="user"
-       android:layout_gravity="center"
-       android:layout_marginTop="30dp"
-       />
-
-   <EditText
-       android:layout_width="160dp"
-       android:layout_height="wrap_content"
-       android:hint="Password"
-      android:layout_gravity="center"
-       android:layout_marginTop="40dp"
-       android:inputType="textPassword"/>
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -116,5 +90,4 @@ feat/login-page
         android:padding="12dp"
         android:text="Clear"
         android:textColor="#FFFFFF" />
-master
 </LinearLayout>
