@@ -1,93 +1,97 @@
 <LinearLayout
-    android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:layout_marginHorizontal="24dp"
+    android:padding="24dp"
     android:orientation="vertical"
-    android:padding="50dp">
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kalkulator"
-        android:textSize="45dp"
+        android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="32dp" />
 
     <EditText
         android:id="@+id/edAngka1"
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:hint="Masukkan Angka 1"
         android:inputType="number"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
     <EditText
         android:id="@+id/edAngka2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:hint="Masukkan Angka 2"
         android:inputType="number"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginBottom="16dp">
 
         <Button
             android:id="@+id/btnPlus"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Plus"
-            android:layout_marginRight="24dp"/>
+            android:layout_marginEnd="8dp" />
+
         <Button
             android:id="@+id/btnMinus"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Minus"/>
+            android:layout_weight="1"
+            android:text="Minus" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
 
         <Button
             android:id="@+id/btnMultiple"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Multiple"
-            android:layout_marginRight="24dp"/>
+            android:layout_weight="1"
+            android:text="Multiply"
+            android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/btnDivide"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Divide"/>
-
+            android:layout_weight="1"
+            android:text="Divide" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result : "
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"/>
+        android:text="Result: "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_marginTop="20dp"
-        android:layout_width="222dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
         android:text="Clear"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:background="#F44336"
+        android:padding="12dp" />
 </LinearLayout>
